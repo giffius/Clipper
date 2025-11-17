@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Clipper Web Design. Get in touch to discuss your high-performance website project.">
+    <title>Contact | Clipper Web Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Clipper Web Design</a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="audit.html" class="nav-link">Free Audit</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1>Let's Talk About Your Website's Velocity</h1>
+            <p>Ready to eliminate digital drag and accelerate your business? Get in touch.</p>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <h2>Get in Touch</h2>
+                    <p>Whether you need a new high-performance website, want to discuss a specific project, or have questions about our approach, we're here to help.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <h3>Email</h3>
+                            <p><a href="mailto:info@clipperwebdesign.com">info@clipperwebdesign.com</a></p>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <h3>Phone</h3>
+                            <p><a href="tel:+15551234567">(555) 123-4567</a></p>
+                            <p class="contact-note">Monday - Friday, 9:00 AM - 5:00 PM MST</p>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <h3>Response Time</h3>
+                            <p>We typically respond to all inquiries within 24 hours during business days.</p>
+                        </div>
+                    </div>
+
+                    <div class="quick-action">
+                        <h3>Want Immediate Insights?</h3>
+                        <p>Skip the wait and get a free site speed audit right now. You'll receive your comprehensive performance report within 48 hours.</p>
+                        <a href="audit.html" class="cta-button-secondary">Get Your Free Audit</a>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                    <h2>Send Us a Message</h2>
+                    <form id="contactForm" class="contact-form" novalidate>
+                        <div class="form-group">
+                            <label for="contactName">Name *</label>
+                            <input 
+                                type="text" 
+                                id="contactName" 
+                                name="contactName" 
+                                required 
+                                placeholder="Your full name"
+                                aria-required="true">
+                            <span class="error-message" id="contactNameError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactEmail">Email *</label>
+                            <input 
+                                type="email" 
+                                id="contactEmail" 
+                                name="contactEmail" 
+                                required 
+                                placeholder="your@email.com"
+                                aria-required="true">
+                            <span class="error-message" id="contactEmailError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactPhone">Phone (Optional)</label>
+                            <input 
+                                type="tel" 
+                                id="contactPhone" 
+                                name="contactPhone" 
+                                placeholder="(555) 123-4567">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactSubject">Subject</label>
+                            <select id="contactSubject" name="contactSubject">
+                                <option value="general">General Inquiry</option>
+                                <option value="new-project">New Project</option>
+                                <option value="pricing">Pricing Question</option>
+                                <option value="support">Technical Support</option>
+                                <option value="partnership">Partnership Opportunity</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactMessage">Message *</label>
+                            <textarea 
+                                id="contactMessage" 
+                                name="contactMessage" 
+                                required 
+                                rows="6" 
+                                placeholder="Tell us about your project or question..."
+                                aria-required="true"></textarea>
+                            <span class="error-message" id="contactMessageError"></span>
+                        </div>
+
+                        <button type="submit" class="cta-button">Send Message</button>
+
+                        <p class="form-disclaimer">Your privacy matters. We'll never share your information with third parties.</p>
+                    </form>
+
+                    <div id="contactSuccessMessage" class="success-message" style="display: none;">
+                        <h3>Message Sent Successfully!</h3>
+                        <p>Thank you for reaching out. We've received your message and will respond to <strong id="contactSubmittedEmail"></strong> within 24 hours.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Clipper Web Design. All rights reserved.</p>
+            <p>Engineered for velocity. Built for conversion.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
